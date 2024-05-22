@@ -6,11 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WARNERBROS</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-    body, html {
+    body,
+    html {
       height: 100%;
       margin: 0;
       padding: 0;
@@ -21,10 +25,10 @@
     }
 
     .hero {
-      background-image: url("IMAGES/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.avif"); /* Replace with your image URL */
+      background-image: url("IMAGES/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.avif");
       background-size: cover;
       background-position: center;
-      height: 100vh; /* Changed height to viewport height */
+      height: 100vh;
     }
 
     h2 {
@@ -33,14 +37,6 @@
 
     p {
       color: white;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    .container {
-      line-height: 150%;
     }
 
     .header {
@@ -91,17 +87,13 @@
       color: white;
     }
 
-    .social {
-      color: red;
-    }
-
     li a:hover:not(.active) {
       background-color: #00cfff;
       color: white;
     }
 
     table {
-      font-family: arial, sans-serif;
+      font-family: Arial, sans-serif;
       border-collapse: collapse;
       width: 100%;
       margin: 30px 0;
@@ -129,15 +121,6 @@
       background-color: #2e3550;
       color: white;
       text-align: center;
-    }
-
-    .label {
-      text-align: center;
-    }
-
-    .fab.fa-facebook {
-      font-size: 70px;
-      color: red;
     }
 
     /* New CSS for sign-in options */
@@ -203,7 +186,7 @@
     }
 
     form input[type="submit"]:hover {
-      background-color: #00cfff;
+      background-color: #009fcc;
     }
   </style>
 </head>
@@ -214,29 +197,30 @@
       <h1>WARNERBROS</h1>
     </header>
     <aside class="left">
-      <img src="IMAGES/WARNERBROS.jpeg" width="172px">
-      <ul>
-        <li><a class="active" href="warnersbros.html">Home</a></li>
-        <li><a href="MOVIES.html">Movies</a></li>
-        <li><a href="TV SHOWS.html">TV Shows</a></li>
-        <li><a href="Games&Apps.html">Games&Apps</a></li>
-        <li><a href="Collection.html">Collection</a></li>
-        <li><a href="Feedback.html">Feedback</a></li>
+      <img src="IMAGES/WARNERBROS.jpeg" width="172px" class="img-fluid">
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link active" href="warnersbros.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="MOVIES.html">Movies</a></li>
+        <li class="nav-item"><a class="nav-link" href="TV SHOWS.html">TV Shows</a></li>
+        <li class="nav-item"><a class="nav-link" href="Games&Apps.html">Games&Apps</a></li>
+        <li class="nav-item"><a class="nav-link" href="Collection.html">Collection</a></li>
+        <li class="nav-item"><a class="nav-link" href="Feedback.html">Feedback</a></li>
       </ul>
       <br><br>
-      <p>"#TAG know what studios are planning."<br>- AT WARNERBROS</p>
+      <p class="text-white">"#TAG know what studios are planning."<br>- AT WARNERBROS</p>
       
       <!-- Sign-in options -->
       <div class="signin-options">
-        <a href="https://www.google.com">Sign in with Google</a>
-        <a href="https://www.facebook.com">Sign in with Facebook</a>
-        <a href="https://www.twitter.com">Sign in with Twitter</a>
+        <a href="https://www.google.com" class="btn btn-outline-light btn-block">Sign in with Google</a>
+        <a href="https://www.facebook.com" class="btn btn-outline-light btn-block">Sign in with Facebook</a>
+        <a href="https://www.twitter.com" class="btn btn-outline-light btn-block">Sign in with Twitter</a>
+      </div>
 
       <!-- Social sign-in options -->
       <div class="social-signin-options">
-        <a href="https://www.instagram.com">Sign in with Instagram</a>
-        <a href="https://www.linkedin.com">Sign in with LinkedIn</a>
-        <a href="https://www.github.com">Sign in with GitHub</a>
+        <a href="https://www.instagram.com" class="btn btn-outline-light btn-block">Sign in with Instagram</a>
+        <a href="https://www.linkedin.com" class="btn btn-outline-light btn-block">Sign in with LinkedIn</a>
+        <a href="https://www.github.com" class="btn btn-outline-light btn-block">Sign in with GitHub</a>
       </div>
     </aside>
     <main class="content">
@@ -249,39 +233,39 @@
       <!-- Movies and TV Shows wrapper -->
       <div class="movies-wrapper">
         <h2>HEAR AND BE AHEAD, STAY TUNED FOR!</h2>
-        <table>
+        <table class="table table-dark">
           <tr>
             <th>Godzilla x Kong: The New Empire</th>
             <th>Kingdom of the Planet of the Apes</th>
             <th>The Ministry of Ungentlemanly Warfare</th>
           </tr>
           <tr>
-            <td><a href="movies/MOVIES.html"><img src="IMAGES/download.jpeg" alt="ONCINEMA CLICK TAP" width="202" height="249"></a></td>
-            <td><a href="movies/MOVIES.html"><img src="IMAGES/images.jpeg" alt="Don't MISSOUT" width="201" height="251"></a></td>
-            <td><a href="movies/MOVIES.html"><img src="IMAGES/war.jpg" alt="The TOP 3" width="252" height="201"></a></td>
+            <td><a href="movies/MOVIES.html"><img src="IMAGES/download.jpeg" alt="ONCINEMA CLICK TAP" class="img-fluid"></a></td>
+            <td><a href="movies/MOVIES.html"><img src="IMAGES/images.jpeg" alt="Don't MISSOUT" class="img-fluid"></a></td>
+            <td><a href="movies/MOVIES.html"><img src="IMAGES/war.jpg" width="180px" alt="The TOP 3" class="img-fluid"></a></td>
           </tr>
           <tr>
-            <td><a href="movies/MOVIES.html">TAP</a></td>
-            <td><a href="movies/MOVIES.html">TAP</a></td>
-            <td><a href="movies/MOVIES.html">TAP</a></td>
+            <td><a href="movies/MOVIES.html" class="btn btn-outline-light btn-block">TAP</a></td>
+            <td><a href="movies/MOVIES.html" class="btn btn-outline-light btn-block">TAP</a></td>
+            <td><a href="movies/MOVIES.html" class="btn btn-outline-light btn-block">TAP</a></td>
           </tr>
         </table>
         <hr><br>
-        <table>
+        <table class="table table-dark">
           <tr>
             <th>DC's Superman and Lois</th>
             <th>Game of Thrones</th>
             <th>DC's Doom Patrol</th>
           </tr>
           <tr>
-            <td><a href="tv shows/TV SHOWS.html"><img src="IMAGES/supermanlois.jpg" alt="ON TV" width="212" height="239"></a></td>
-            <td><a href="tv shows/TV SHOWS.html"><img src="IMAGES/throne.jpg" alt="THE EPIC SERIES" width="225" height="225"></a></td>
-            <td><a href="tv shows/TV SHOWS.html"><img src="IMAGES/doom.jpg" alt="DARK DAYS" width="243" height="207"></a></td>
+            <td><a href="tv shows/TV SHOWS.html"><img src="IMAGES/supermanlois.jpg" alt="ON TV" class="img-fluid"></a></td>
+            <td><a href="tv shows/TV SHOWS.html"><img src="IMAGES/throne.jpg" alt="THE EPIC SERIES" class="img-fluid"></a></td>
+            <td><a href="tv shows/TV SHOWS.html"><img src="IMAGES/doom.jpg" alt="DARK DAYS" class="img-fluid"></a></td>
           </tr>
           <tr>
-            <td><a href="tv shows/TV SHOWS.html">TAP</a></td>
-            <td><a href="tv shows/TV SHOWS.html">TAP</a></td>
-            <td><a href="tv shows/TV SHOWS.html">TAP</a></td>
+            <td><a href="tv shows/TV SHOWS.html" class="btn btn-outline-light btn-block">TAP</a></td>
+            <td><a href="tv shows/TV SHOWS.html" class="btn btn-outline-light btn-block">TAP</a></td>
+            <td><a href="tv shows/TV SHOWS.html" class="btn btn-outline-light btn-block">TAP</a></td>
           </tr>
         </table>
       </div>
@@ -290,9 +274,15 @@
       <p>&copy; 2023 WARNERBROS. All rights reserved.</p>
     </footer>
   </div>
+
+  <!-- Bootstrap and jQuery scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
+
 
 
 
